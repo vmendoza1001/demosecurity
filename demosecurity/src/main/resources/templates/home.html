@@ -23,10 +23,19 @@
     </p>
 
     <hr>
+    <!-- Add a link to point to/leaders ... this is for the managers -->
+    <p>
+        <a th:href="@{/leaders}">Leadership Meeting</a>
+        (Only for Manager peeps)
+    </p>
 
-    <form action="#" th:action="@{/logout}" method="POST">
+    <hr>
 
-        <input type="submit" value="Logout" />
+    <!-- add a logout button -->
+    <form action="#" th:action="@{/logout}"
+          method="POST">
+
+        <input type="submit" value="Logout" class="btn btn-outline-primary mt-2" />
     </form>
 
 </body>
